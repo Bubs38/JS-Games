@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#grid, #selection {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+#grid {
+  height: 600px;
+  margin-top: 6rem;
+}
+
+#selection {
+  height: 600px;
+  margin-top: 3rem;
+}
+
+#mistakes {
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cell, .digit {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(0, 0, 0, 0.63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+
+
+.digit {
+  width: 58px;
+}
+
+.cell-bottom-border {
+  border-bottom: 3px solid black;
+}
+
+.cell-right-border {
+  border-right: 3px solid black;
+}
+
+.selected-digit {
+  background-color: rgba(184, 38, 184, 0.6);
+  color: black;
+}
+
+.correct-digit {
+  background-color: rgba(88, 235, 88, 0.827);
+}
+.wrong-digit {
+  background-color: rgba(254, 48, 48, 0.86);
+}
